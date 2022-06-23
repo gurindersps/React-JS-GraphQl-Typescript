@@ -1,0 +1,114 @@
+.modalContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .modal {
+        width: 450px;
+        background-color: #f7f7f7;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        .title {
+            margin-left: 10px;
+            font-family: "gothambold";
+            font-size: 18px;
+        }
+        .field {
+            background-color: #fff;
+            border-bottom: 1px solid #f7f7f7;
+            width: 100%;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            p {
+                font-family: "Inter";
+                font-weight: 700;
+                font-size: 14px;
+                span {
+                    margin-left: 15px;
+                    font-weight: 500;
+                }
+                &:last-child {
+                    color: rgb(111, 111, 252);
+                    font-weight: 500;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+.header {
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    filter: drop-shadow(0px 0px 24px rgba(52, 52, 52, 0.15))
+        drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.1));
+    h3 {
+        text-transform: capitalize;
+        font-family: "gothambold";
+        font-size: 20px;
+        margin: 0;
+    }
+}
+.subModal {
+    width: 450px;
+    background-color: #f7f7f7;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .inputs,
+    .btns {
+        padding: 20px;
+    }
+    .inputs {
+        input {
+            width: 100%;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            border: 2px solid #838383;
+            font-family: "gothambook";
+            &:focus {
+                outline: 3px solid rgba(46, 104, 187, 0.2);
+                border: 2px solid #2e68bb;
+            }
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+            &:disabled {
+                background-color: #b4b4b4;
+                opacity: 0.4;
+            }
+        }
+    }
+    .btns {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        button {
+            background-color: #fff8ec;
+            border: 2px solid #fcb858;
+            border-radius: 4px;
+            padding: 10px 12px;
+            font-family: "gothammedium";
+            font-size: 16px;
+            &:disabled {
+                opacity: 0.6;
+            }
+        }
+        p {
+            font-family: "Inter";
+            font-weight: 400;
+            font-size: 14px;
+            color: #2e68bb;
+            cursor: pointer;
+        }
+    }
+}

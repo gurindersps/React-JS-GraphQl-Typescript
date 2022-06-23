@@ -1,0 +1,87 @@
+.modal {
+    position: absolute;
+    top: calc(100% + 35px);
+    right: -30px;
+    background-color: #fff;
+    border-radius: 4px;
+    width: 480px;
+    box-shadow: 0px 0px 24px rgba(57, 57, 57, 0.15);
+    font-family: "Inter";
+    font-weight: 600;
+    z-index: 2;
+    padding: 25px;
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        & > div {
+            p {
+                margin: 0;
+                font-family: "Inter";
+                font-weight: 500;
+                font-size: 14px;
+            }
+            &:nth-child(1) {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                column-gap: 5px;
+                img {
+                    cursor: pointer;
+                }
+                p {
+                    cursor: pointer;
+                    &:nth-child(1) {
+                        font-family: "gothambold";
+                        font-size: 16px;
+                        cursor: default;
+                    }
+                }
+            }
+            &:nth-child(2) {
+                p {
+                    color: #3b82f4;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .notif {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 5px;
+        .avatar {
+            width: 15%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        & > div:last-child {
+            width: 85%;
+            font-family: "Inter";
+            font-weight: 500;
+            font-size: 14px;
+            p {
+                span {
+                    font-weight: 700;
+                }
+                &.date {
+                    color: #a7a7a7;
+                }
+            }
+            .btns {
+                margin-top: 15px;
+                margin-bottom: 10px;
+                button {
+                    color: #00225d;
+                    border: 1px solid #00225d;
+                    border-radius: 4px;
+                    padding: 3px 10px;
+                    margin-right: 7px;
+                }
+            }
+        }
+    }
+}

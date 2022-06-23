@@ -1,0 +1,97 @@
+.MuiMenu-list {
+    padding: 0;
+}
+.MuiMenu-paper {
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1), 0px 0px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    /* width: 250px; */
+}
+.MuiMenu-root {
+    padding: 0;
+}
+.MuiList-root {
+    padding: 0 !important;
+}
+.react-datepicker {
+    border: 0 !important;
+}
+.react-datepicker__month-container {
+    width: 250px;
+    border: 0 !important;
+}
+.react-datepicker__header {
+    background-color: #fff !important;
+    border: 0 !important;
+}
+.react-datepicker__day-name {
+    opacity: 0.65;
+    width: calc(250px / 8) !important;
+    margin: 0 !important;
+    color: #6b6b6b !important;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+}
+.react-datepicker__week {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.react-datepicker__week-number {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+.react-datepicker__week > .react-datepicker__day,
+.react-datepicker__week-number {
+    width: calc(250px / 9) !important;
+    margin-left: 0;
+    margin-right: 0;
+    height: calc(250px / 9);
+    border-radius: 50%;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #72727e;
+}
+.react-datepicker__week > .react-datepicker__day:hover {
+    border-radius: 50%;
+}
+.react-datepicker__week > .react-datepicker__day--selected {
+    color: #3b82f4;
+    background-color: #fff;
+    border: 2px solid #3b82f4;
+}
+.react-datepicker__week > .react-datepicker__day--selected:hover {
+    background-color: #fff;
+}
+.react-datepicker__day--keyboard-selected {
+    background-color: #fff !important;
+}
+.react-datepicker__day--in-range {
+    background-color: #fff !important;
+    border: 2px solid #3b82f4;
+    color: #3b82f4 !important;
+}
+.react-datepicker__day--outside-month,
+.react-datepicker__day--outside-month.react-datepicker__day--in-range {
+    border: 0;
+}
+
+/* .customDatePickerWidth {
+  width: 500px;
+}
+.customDatePickerWidth,
+.customDatePickerWidth > div.react-datepicker-wrapper,
+.customDatePickerWidth
+  > div
+  > div.react-datepicker__input-container
+  .customDatePickerWidth
+  > div
+  > div.react-datepicker__input-container
+  input {
+  width: 500px;
+} */

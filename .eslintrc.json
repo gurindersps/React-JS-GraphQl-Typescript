@@ -1,0 +1,180 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "jest": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "extends": [
+        "plugin:import/typescript",
+        "plugin:prettier/recommended",
+        "plugin:jsx-a11y/recommended",
+        "eslint:recommended",
+        "airbnb",
+        "prettier"
+    ],
+    "settings": {
+        "react": {
+            "version": "detect"
+        },
+        "import/resolver": {
+            "node": {
+                "extensions": [".js", ".jsx", ".ts", ".tsx"]
+            }
+        }
+    },
+
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module",
+        "bracketSpacing": true
+    },
+    "plugins": ["react", "@typescript-eslint", "prettier", "jsx-a11y"],
+    "overrides": [
+        {
+            "files": ["*.ts", "*.tsx"],
+            "extends": [
+                "plugin:@typescript-eslint/eslint-recommended",
+                "plugin:@typescript-eslint/recommended",
+                "prettier"
+            ],
+            "parser": "@typescript-eslint/parser",
+            "plugins": ["@typescript-eslint"]
+        }
+    ],
+    "rules": {
+        "prettier/prettier": [
+            "error",
+            {
+                "endOfLine": "auto"
+            }
+        ],
+        "react/react-in-jsx-scope": "off",
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [".js", ".jsx", ".ts", ".tsx"]
+            }
+        ],
+        "react/state-in-constructor": "off",
+        "react/no-unescaped-entities": 0,
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "js": "never",
+                "jsx": "never",
+                "ts": "never",
+                "tsx": "never"
+            }
+        ],
+        "react/prop-types": "off",
+        "react/require-default-props": "off",
+        "react/function-component-definition": [
+            0,
+            {
+                "namedComponents": "function-declaration"
+            }
+        ],
+        "jsx-a11y/no-static-element-interactions": [
+            0,
+            {
+                "handlers": [
+                    "onClick",
+                    "onMouseDown",
+                    "onMouseUp",
+                    "onKeyPress",
+                    "onKeyDown",
+                    "onKeyUp"
+                ]
+            }
+        ],
+        "jsx-a11y/aria-role": "warn",
+        "jsx-a11y/img-redundant-alt": [
+            2,
+            {
+                "components": ["Pic"],
+                "words": ["Picture", "Pic", "Photograph"]
+            }
+        ],
+
+        "eslint no-underscore-dangle": 0,
+        "import/prefer-default-export": "off",
+
+        "lit-a11y/click-events-have-key-events": [
+            "off",
+            {
+                "allowList": ["foo-button"],
+                "allowCustomElements": false
+            }
+        ],
+
+        "jsx-a11y/label-has-associated-control": [
+            0,
+            {
+                "labelComponents": ["CustomInputLabel"],
+                "labelAttributes": ["label"],
+                "controlComponents": ["CustomInput"],
+                "depth": 3
+            }
+        ],
+        "no-debugger": "off",
+        "react/jsx-no-bind": [
+            2,
+            {
+                "ignoreDOMComponents": true,
+                "ignoreRefs": true,
+                "allowArrowFunctions": true,
+                "allowFunctions": true,
+                "allowBind": true
+            }
+        ],
+        "react/jsx-props-no-spreading": "off",
+
+        "jsx-a11y/click-events-have-key-events": [
+            0,
+            {
+                "handlers": [
+                    "onClick",
+                    "onMouseDown",
+                    "onMouseUp",
+                    "onKeyPress",
+                    "onKeyDown",
+                    "onKeyUp"
+                ]
+            }
+        ],
+        "jsx-a11y/no-noninteractive-element-interactions": "off",
+        "jsx-a11y/anchor-is-valid": "off",
+        "no-underscore-dangle": "off",
+        "prefer-regex-literals": "off",
+        "react/no-unstable-nested-components": "off",
+        "no-unused-expressions": "off",
+        "import/no-unresolved": "off",
+        "import/order": "off",
+        "consistent-return": "off",
+        "@typescript-eslint/ban-types": [
+            "error",
+            {
+                "types": {
+                    "String": false,
+                    "Boolean": false,
+                    "Number": false,
+                    "Symbol": false,
+                    "{}": false,
+                    "Object": false,
+                    "object": false,
+                    "Function": true
+                },
+                "extendDefaults": true
+            }
+        ],
+        "@typescript-eslint/no-explicit-any": 0,
+        "jsx-a11y/alt-text": "off",
+        "@typescript-eslint/no-unused-vars": "off",
+        "no-nested-ternary": "off"
+    }
+}
